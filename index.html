@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blumentest</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.3.1.min.js"></script> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body class="Body">
+	
+	<div class="Wrap">
+		<div id="progress" class="hidden"> 
+			<div id="real-progress-wrap">
+				<div id="real-progress"></div>
+			</div>
+		</div>
+		<div class="center-out" id="TestCenter">
+			<div class="center-middle">
+				<div id = "Frame" class="Frame overflow">
+					<div id = "Manual">
+						<img src="Stimuli/11.png" class="Stimulus-ex hidden">
+						<img src="Stimuli/31.png" class="Stimulus-ex hidden">
+						<img src="Stimuli/21.png" class="Stimulus-ex hidden">
+						<img src="Stimuli/41.png" class="Stimulus-ex hidden">
+						<p id="instText">Im Folgenden werden Sie auf Ihrem Smartphone/Tablet einen kurzen Konzentrationstest bearbeiten.</p>
+						<div id="consent" class="hidden">
+							<input type="checkbox" id="consent1">
+							<label for="consent1">Ich habe verstanden, dass die Teilnahme an der Studie freiwillig ist.</label><br>
+							<input type="checkbox" id="consent2">
+							<label for="consent2">Ich bin volljährig.</label><br>
+							<input type="checkbox" id="consent3">
+							<label for="consent3">Ich willige ein, an der Studie teilzunehmen.</label>
+						</div>
+						<div id="divDemo" class="hidden">
+							<p>Geburtsdatum <input type="text" id ="txtBirth"></p>
+							<p>Geschlecht	<br>
+								<input type="radio" id="rad_m" name="sex" value=1>
+								<label for="rad_m">Männlich</label>
+								<input type="radio" id="rad_f" name="sex" value=2>
+								<label for="rad_f">Weiblich</label> <br>
+							</p>
+							<p>Haben Sie eine Farbensehschwäche? <br>			
+								<input type="radio" id="rad_y" name="color" value=1>
+								<label for="rad_y">Ja</label>
+								<input type="radio" id="rad_n" name="color" value=2>
+								<label for="rad_n">Nein</label> <br>
+							</p>
+						</div>
+						<div id="divExamples" class="hidden">
+							<p class="bigText">Blumen mit
+								<img src="img/Kreis.png" id="stim1" class="middle-img"> + 
+								<img src="img/Bluetenblatt.png" class="middle-img">
+								<img src="img/Bluetenblatt.png" class="middle-img"> z.B.
+								<img src="Stimuli/21.png" id="exampleImg1" class="big-img">
+							</p>
+							<p class="bigText"><b>UND</b></p>
+							<p class="bigText">Blumen mit
+								<img src="img/Viereck.png" id="stim2" class="middle-img"> + 
+								<img src="img/Bluetenblatt.png" class="middle-img">
+								<img src="img/Bluetenblatt.png" class="middle-img">
+								<img src="img/Bluetenblatt.png" class="middle-img"> z.B.
+								<img src="Stimuli/41.png" id="exampleImg2" class="big-img">
+							</p>
+						</div>
+						<div id="CenterButton">
+							<button type="button" id="contInst">Start</button>
+							<button type="button" id="backInst" class="hidden">Zurück</button>
+						</div>
+					</div>
+					<div id="TestContainer" class="TestContainer hidden">
+						<img src="" class="Stimulus" id="Stim1">
+						<img src="" class="Stimulus" id="Stim2">
+						<img src="" class="Stimulus" id="Stim3">
+						<img src="" class="Stimulus" id="Stim4">
+						<img src="" class="Stimulus" id="Stim5">
+						<img src="" class="Stimulus" id="Stim6">
+						<img src="" class="Stimulus" id="Stim7">
+						<img src="" class="Stimulus" id="Stim8">
+						<img src="" class="Stimulus" id="Stim9">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="DataHandling.js" defer></script>
+	<script type="text/javascript" src="Navigation.js?version=2" defer></script>
+	<script type="text/javascript" src="TestControls.js" defer></script>
+</body>
+</html>
