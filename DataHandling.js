@@ -110,6 +110,8 @@ var Settings = {
 
 var Participant = {
 	VPCode: getVPCode(),
+	persCode: "",
+	nickName: "",
 	version: Settings.version,
 	InstRep: 0,
 
@@ -215,16 +217,17 @@ function getResolution() {
 	return W + "x" + H;
 }
 
-function getDemo(VP) {
-	VP.age = parseInt(document.getElementById("sel_age").value);
-	VP.sex = parseInt($('input[name="sex"]:checked').val());
-	VP.edu = parseInt(document.getElementById("sel_edu").value);
-	VP.nat = parseInt($('input[name="nat"]:checked').val());
-	VP.natOther = document.getElementById("nat_other").value;
-
-	if (VP.natOther === "") {
-		VP.natOther = "-99";
+function getDemo() {
+	Participant.persCode = document.getElementById("pers-id").value;
+	Participant.nickName = document.getElementById("nick-id").value;
+	if (
+		(Participant.persCode.trim() === "") |
+		(Participant.nickName.trim() === "")
+	) {
+		alert("Bitte gib Deinen Personencode und Nickname ein");
+		return false;
 	}
+	return true;
 }
 
 function sendResults() {

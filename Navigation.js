@@ -110,6 +110,9 @@ function nextInstruction() {
 	// }
 	switch (Settings.currentInst) {
 		case 0:
+			if (!getDemo()) {
+				return false;
+			}
 			document.getElementById("contInst").innerHTML = "Start";
 			break;
 		case 1:
@@ -124,6 +127,22 @@ function nextInstruction() {
 			});
 			endExplo();
 			document.getElementById("backInst").classList.toggle("hidden");
+			break;
+		case 5:
+			sendResults();
+			document.getElementById("Frame").classList.remove("overflow");
+			document.body.addEventListener("touchmove", preventDefault, {
+				passive: false,
+			});
+			document.getElementById("Manual").classList.toggle("hidden");
+			document.getElementById("TestContainer").classList.toggle("hidden");
+			document.getElementById("progress").classList.toggle("hidden");
+			document.getElementById("backInst").classList.toggle("hidden");
+			Participant.phpCode = phpCodes.Update;
+			RT.pre = Date.now();
+			document.getElementById("contInst").classList.toggle("hidden");
+			progressInterval = setInterval(progressBar, 33);
+			//IntervalId = setTimeout(endTest,Settings.timelimit*1000);
 			break;
 
 		default:
