@@ -1,0 +1,2 @@
+CREATE DATABASE `ast`CHARSET=utf8 COLLATE utf8_unicode_ci;
+CREATE TABLE `ast`.`ast_results` ( `counter` INT NOT NULL AUTO_INCREMENT , `VPCode` TEXT NOT NULL , `persCode` TEXT NOT NULL , `nickName` TEXT NOT NULL , `version` INT NOT NULL , `InstRep` INT NOT NULL , `mistakes` INT NOT NULL , `RT` LONGTEXT NOT NULL , `response` LONGTEXT NOT NULL , `finished` BOOLEAN NOT NULL , PRIMARY KEY (`counter`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_unicode_ci;
