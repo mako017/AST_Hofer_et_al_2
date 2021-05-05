@@ -223,7 +223,10 @@ function getDemo() {
 }
 
 function sendResults() {
-	$.post("./php/mysql.php", Participant);
+	$.post(
+		"./php/mysql.php",
+		encodeURI(JSON.stringify({ payload: Participant }))
+	);
 }
 
 function endTest() {
