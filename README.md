@@ -17,4 +17,5 @@ The AST was developed as web app and has no special requirements apart from a mo
 
 1. All files apart from `.gitignore`, `README.md`, and `php/config.template.php` must be copied to the webserver
 2. `setup.sql` must be executed to create the database for data colletion
-3. In `php/config.php` the credentials (host, user, and password) must be changed
+3. Copy `php/config.template.php` to `php/config.php`
+4. In `php/config.php` the credentials (host, user, and password) must be changed
