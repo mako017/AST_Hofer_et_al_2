@@ -122,14 +122,6 @@ var Participant = {
 
 	resolution: getResolution(),
 	os: navigator.userAgent,
-
-	phpCode: 0,
-};
-
-var phpCodes = {
-	New: 0,
-	Feedback: 1,
-	Update: 2,
 };
 
 var RT = {

@@ -138,7 +138,6 @@ function nextInstruction() {
 			document.getElementById("TestContainer").classList.toggle("hidden");
 			document.getElementById("progress").classList.toggle("hidden");
 			document.getElementById("backInst").classList.toggle("hidden");
-			Participant.phpCode = phpCodes.Update;
 			RT.pre = Date.now();
 			document.getElementById("contInst").classList.toggle("hidden");
 			progressInterval = setInterval(progressBar, 33);
