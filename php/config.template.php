@@ -5,7 +5,6 @@ DB::$user = 'user';
 DB::$password = 'password';
 DB::$dbName = 'dbName';
 DB::$encoding = 'utf8';
-session_start();
 
 function serverResponse(string $call, $payload="")
 {
