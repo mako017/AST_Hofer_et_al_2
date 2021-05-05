@@ -8,6 +8,11 @@ Compared to the original version of the AST, the instructions were rewritten to 
 
 The AST was developed as web app and has no special requirements apart from a modern web browser. Results are saved in a MySQL table.
 
+### Dependencies
+
+- [JQuery](https://github.com/jquery/jquery)
+- [Meekro](https://github.com/SergeyTsalkov/meekrodb)
+
 ### Installation
 
 1. All files apart from `.gitignore`, `README.md`, and `php/config.template.php` must be copied to the webserver
