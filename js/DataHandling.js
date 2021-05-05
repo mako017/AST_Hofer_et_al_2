@@ -100,7 +100,7 @@ var Settings = {
 
 	currentInst: 0,
 	currentItem: 0,
-	currentPage: 0,
+	currentPage: -1,
 	lastTouch: 0,
 
 	ImgPath: "Stimuli/",

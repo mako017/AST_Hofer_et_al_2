@@ -1,8 +1,8 @@
 var TargetDesc = {
 	shape: ["Viereck", "Kreis"],
-	amount: ["zwei", "drei"],
+	amount: ["drei", "zwei"],
 	shapep: ["Kreis", "Viereck"],
-	amountp: ["drei", "zwei"],
+	amountp: ["zwei", "drei"],
 };
 
 var FeedbackText = {
@@ -30,15 +30,6 @@ var FeedbackText = {
 
 function nextInstruction() {
 	// switch (Settings.currentInst) {
-	// 	case 0:
-	// 		document.getElementById("contInst").innerHTML = "Weiter";
-	// 	case 2: //Landing Page -> get demo -> Show stimuli; Explanation
-	// 		Participant.birth = document.getElementById("txtBirth").value;
-	// 		Participant.sex = parseInt($('input[name="sex"]:checked').val());
-	// 		Participant.color = parseInt($('input[name="color"]:checked').val());
-	// 		document.getElementById("divDemo").classList.toggle("hidden");
-	// 		sendResults();
-	// 		Participant.phpCode = phpCodes.Feedback;
 
 	// 		if (jQuery(window).height() < jQuery(window).width()) {
 	// 			Settings.currentInst++;
@@ -53,28 +44,6 @@ function nextInstruction() {
 	// 			);
 	// 		}
 	// 		break;
-	// 	case 4:
-	// 		for (
-	// 			let i = 0;
-	// 			i < document.getElementsByClassName("Stimulus-ex").length;
-	// 			i++
-	// 		) {
-	// 			let element = document.getElementsByClassName("Stimulus-ex")[i];
-	// 			element.classList.toggle("hidden");
-	// 		}
-	// 		break;
-	// 	case 5:
-	// 		for (
-	// 			let i = 0;
-	// 			i < document.getElementsByClassName("Stimulus-ex").length;
-	// 			i++
-	// 		) {
-	// 			let element = document.getElementsByClassName("Stimulus-ex")[i];
-	// 			element.classList.toggle("hidden");
-	// 		}
-	// 		document.getElementById("divExamples").classList.toggle("hidden");
-	// 		break;
-	// 	case 6:
 	// 		Settings.currentPage--;
 	// 		swapImg();
 	// 		document.getElementById("divExamples").classList.toggle("hidden");
