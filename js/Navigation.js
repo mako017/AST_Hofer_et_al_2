@@ -43,45 +43,13 @@ function nextInstruction() {
 	// 				"Ihr Gerät befindet sich noch im Hochkant-Format. Bitte halten Sie es für die Testung quer."
 	// 			);
 	// 		}
-	// 		break;
-	// 		Settings.currentPage--;
-	// 		swapImg();
-	// 		document.getElementById("divExamples").classList.toggle("hidden");
-	// 		break;
-	// 	case 7:
-	// 		document.getElementById("Manual").classList.toggle("hidden");
-	// 		document.getElementById("TestContainer").classList.toggle("hidden");
-	// 		document.getElementById("Frame").classList.remove("overflow");
-	// 		document.body.addEventListener("touchmove", preventDefault, {
-	// 			passive: false,
-	// 		});
-	// 		endExplo();
-	// 		document.getElementById("backInst").classList.toggle("hidden");
-	// 		break;
-	// 	case 8:
-	// 		sendResults();
-	// 		document.getElementById("Frame").classList.remove("overflow");
-	// 		document.body.addEventListener("touchmove", preventDefault, {
-	// 			passive: false,
-	// 		});
-	// 		document.getElementById("Manual").classList.toggle("hidden");
-	// 		document.getElementById("TestContainer").classList.toggle("hidden");
-	// 		document.getElementById("progress").classList.toggle("hidden");
-	// 		document.getElementById("backInst").classList.toggle("hidden");
-	// 		Participant.phpCode = phpCodes.Update;
-	// 		RT.pre = Date.now();
-	// 		document.getElementById("contInst").classList.toggle("hidden");
-	// 		progressInterval = setInterval(progressBar, 33);
-	// 		//IntervalId = setTimeout(endTest,Settings.timelimit*1000);
-	// 		break;
-	// 	default:
-	// 		break;
-	// }
+
 	switch (Settings.currentInst) {
 		case 0:
 			if (!getDemo()) {
 				return false;
 			}
+			sendResults();
 			document.getElementById("contInst").innerHTML = "Start";
 			break;
 		case 1:
@@ -111,9 +79,6 @@ function nextInstruction() {
 			document.getElementById("contInst").classList.toggle("hidden");
 			progressInterval = setInterval(progressBar, 33);
 			//IntervalId = setTimeout(endTest,Settings.timelimit*1000);
-			break;
-
-		default:
 			break;
 	}
 

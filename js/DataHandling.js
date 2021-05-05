@@ -223,11 +223,7 @@ function getDemo() {
 }
 
 function sendResults() {
-	if (navigator.onLine) {
-		$.post("mysql.php", Participant);
-	} else if (Participant.finished) {
-		download(Participant.VPCode + ".txt", JSON.stringify(Participant));
-	}
+	$.post("./php/mysql.php", Participant);
 }
 
 function endTest() {
