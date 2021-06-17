@@ -115,3 +115,13 @@ window.oncontextmenu = function (event) {
 	event.stopPropagation();
 	return false;
 };
+
+getURL();
+if (
+	Participant.persCode !== "" &&
+	Participant.persCode !== "null" &&
+	Participant.nickName !== "" &&
+	Participant.nickName !== "null"
+) {
+	document.getElementById("contInst").click();
+}

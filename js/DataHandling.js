@@ -196,6 +196,16 @@ function getTestPages(inputString) {
 	return output;
 }
 
+function getURL() {
+	const urlParams = new URLSearchParams(window.location.search);
+	Participant.persCode = decodeURI(urlParams.get("persCode"));
+	Participant.nickName = decodeURI(urlParams.get("nickName"));
+	if (Participant.persCode !== "null")
+		document.getElementById("pers-id").value = Participant.persCode;
+	if (Participant.nickName !== "null")
+		document.getElementById("nick-id").value = Participant.nickName;
+}
+
 function getVPCode() {
 	var r = Math.random().toString(36).substr(2, 9);
 	return r;
