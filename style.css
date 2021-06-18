@@ -216,3 +216,7 @@ b {
 .bigText > * {
 	margin: 0 0.5rem;
 }
+
+#jumpOff {
+	margin-top: 1rem;
+}

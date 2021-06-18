@@ -28,22 +28,16 @@ var FeedbackText = {
 		" roten Blütenblättern dürfen nach oben geschoben werden. Bitte korrigieren Sie die rot markierte Blume.",
 };
 
+function jumpOff() {
+	const URL =
+		"http://enterURLHere.com" +
+		`?persCode=${encodeURIComponent(
+			Participant.persCode
+		)}&nickName=${encodeURIComponent(Participant.nickName)}`;
+	window.location.href = URL;
+}
+
 function nextInstruction() {
-	// switch (Settings.currentInst) {
-
-	// 		if (jQuery(window).height() < jQuery(window).width()) {
-	// 			Settings.currentInst++;
-	// 		}
-
-	// 		break;
-	// 	case 3:
-	// 		if (jQuery(window).height() > jQuery(window).width()) {
-	// 			Settings.currentInst--;
-	// 			alert(
-	// 				"Ihr Gerät befindet sich noch im Hochkant-Format. Bitte halten Sie es für die Testung quer."
-	// 			);
-	// 		}
-
 	switch (Settings.currentInst) {
 		case 0:
 			if (!getDemo()) {
@@ -108,6 +102,7 @@ document
 document
 	.getElementById("backInst")
 	.addEventListener("click", resetInstruction, true);
+document.getElementById("jumpOff").addEventListener("click", jumpOff, true);
 initTest();
 
 window.oncontextmenu = function (event) {
