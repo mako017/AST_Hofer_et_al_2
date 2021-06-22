@@ -89,9 +89,13 @@ function resetInstruction() {
 	document
 		.getElementById("page" + Settings.currentInst)
 		.classList.toggle("hidden");
-	Settings.currentInst = 3;
-	Settings.currentPage = 0;
+	Settings.currentInst = 2;
+	Settings.currentPage = -1;
 	Participant.InstRep++;
+	document
+		.getElementById("page" + Settings.currentInst)
+		.classList.toggle("hidden");
+	document.getElementById("backInst").classList.toggle("hidden");
 	nextInstruction();
 }
 function preventDefault(e) {
