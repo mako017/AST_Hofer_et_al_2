@@ -86,7 +86,9 @@ function nextInstruction() {
 }
 
 function resetInstruction() {
-	document.getElementById("backInst").classList.toggle("hidden");
+	document
+		.getElementById("page" + Settings.currentInst)
+		.classList.toggle("hidden");
 	Settings.currentInst = 3;
 	Settings.currentPage = 0;
 	Participant.InstRep++;
