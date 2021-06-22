@@ -247,7 +247,7 @@ function giveFeed(input) {
 		Settings.pages[Settings.currentPage][Settings.currentItem][0] == "t" &&
 		input == -1
 	) {
-		alert(FeedbackText.target);
+		swal("Achtung", FeedbackText.target);
 		snapItem("bottom");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes += 1;
@@ -255,7 +255,7 @@ function giveFeed(input) {
 		Settings.pages[Settings.currentPage][Settings.currentItem][0] == "d" &&
 		input == 1
 	) {
-		alert(FeedbackText.distr);
+		swal("Achtung", FeedbackText.distr);
 		snapItem("top");
 		Stimulus[Settings.lastTouch].classList.add("Item_wrong");
 		Participant.mistakes += 1;

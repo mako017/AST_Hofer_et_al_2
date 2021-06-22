@@ -226,7 +226,7 @@ function getDemo() {
 		(Participant.persCode.trim() === "") |
 		(Participant.nickName.trim() === "")
 	) {
-		alert("Bitte gib Deinen Personencode und Nickname ein");
+		swal("Achtung", "Bitte gib Deinen Personencode und Nickname ein");
 		return false;
 	}
 	return true;

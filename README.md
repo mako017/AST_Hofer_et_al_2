@@ -20,6 +20,7 @@ Please take note that special characters need to be encoded by encodeURIComponen
 
 - [JQuery](https://github.com/jquery/jquery)
 - [Meekro](https://github.com/SergeyTsalkov/meekrodb)
+- [SweetAlert](https://github.com/t4t5/sweetalert)
 
 ### Installation
 
