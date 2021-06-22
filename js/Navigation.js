@@ -49,7 +49,7 @@ function nextInstruction() {
 		case 1:
 			document.getElementById("contInst").innerHTML = "Weiter";
 			break;
-		case 4:
+		case 5:
 			document.getElementById("Manual").classList.toggle("hidden");
 			document.getElementById("TestContainer").classList.toggle("hidden");
 			document.getElementById("Frame").classList.remove("overflow");
@@ -59,7 +59,7 @@ function nextInstruction() {
 			endExplo();
 			document.getElementById("backInst").classList.toggle("hidden");
 			break;
-		case 5:
+		case 6:
 			sendResults();
 			document.getElementById("Frame").classList.remove("overflow");
 			document.body.addEventListener("touchmove", preventDefault, {
