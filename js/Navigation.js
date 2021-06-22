@@ -15,7 +15,7 @@ var FeedbackText = {
 		TargetDesc.shapep[Settings.version] +
 		" in der Mitte und " +
 		TargetDesc.amountp[Settings.version] +
-		" roten Blütenblättern müssen nach oben geschoben werden. Bitte korrigieren Sie die rot markierte Blume.",
+		" roten Blütenblättern müssen nach oben geschoben werden. Bitte korrigiere die rot markierte Blume.",
 	distr:
 		"Falsch, nur Blumen mit einem " +
 		TargetDesc.shape[Settings.version] +
@@ -25,7 +25,7 @@ var FeedbackText = {
 		TargetDesc.shapep[Settings.version] +
 		" in der Mitte und " +
 		TargetDesc.amountp[Settings.version] +
-		" roten Blütenblättern dürfen nach oben geschoben werden. Bitte korrigieren Sie die rot markierte Blume.",
+		" roten Blütenblättern dürfen nach oben geschoben werden. Bitte korrigiere die rot markierte Blume.",
 };
 
 function jumpOff() {
